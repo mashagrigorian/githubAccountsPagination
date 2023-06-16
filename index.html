@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loadingIndicator">
+        <span class="loading-spinner"></span> Loading...
+      </div>
+    
+      <table style="display: none;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Login</th>
+            <th>Type</th>
+            <th>Followers URL</th>
+          </tr>
+        </thead>
+        <tbody id="gitHubUserTableBody"></tbody>
+      </table>
+    
+      <div id="paginationContainer"></div>
+
+      <div class="popup-container" id="popupContainer">
+        <div class="popup-content" id="popupContent">
+          <span class="popup-close" id="popupClose"></span>
+          <div id="popupData">
+            <p><strong>ID:</strong> <span id="popupId"></span></p>
+            <p><strong>Login:</strong> <span id="popupLogin"></span></p>
+            <p><strong>Followers URL:</strong> <span id="popupFollowersUrl"></span></p>
+          </div>
+        </div>
+      </div>
+    <script src="./script/index.js"></script> 
+</body>
+</html>
